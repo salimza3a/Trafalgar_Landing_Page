@@ -26,7 +26,16 @@ header {
     justify-content: space-between;
     margin-top: 5.6rem;
 }
-
+.fa-bars {
+    font-size: 2.3rem;
+    transition: all .2s ease-out;
+    display: none;
+}
+.fa-bars:hover {
+    color: red;
+    transform: scale(.9);
+    cursor: pointer;
+}
 .logo {
     display: flex;
     align-items: center;
@@ -44,6 +53,7 @@ header {
 
 .navbar ul {
     display: flex;
+    margin-top: 1rem;
 
                           
 } 
@@ -57,10 +67,15 @@ header {
 .navbar li a {
     font-size: 1.8rem;
     line-height:2.2rem ;
-
+    display: block;
     font-weight: 400;
     color: var(--color-navbar);
     text-decoration: none;
+    transition: all .4s ease-in;
+}
+.navbar li a:hover {
+    transform: scale(.96);
+    color: rgb(179, 43, 43);
 }
 .navbar li:first-child a {
     font-weight: 700;
@@ -124,6 +139,7 @@ header {
 
 .second{
     text-align: center;
+    margin-top: 9.94%;
 }
 
 .services h2 {
@@ -163,6 +179,10 @@ header {
     
 }
 
+.position img {
+    z-index: -9999;
+}
+
 .box {
     flex:1 0 auto;
     width: 33%;
@@ -174,8 +194,9 @@ header {
     border-radius: 2rem;
     text-align: left;
     position: relative;
-    
 }
+
+
 .box > * {
     margin-left: 2rem;
     margin-right: 4.5rem;
@@ -199,16 +220,6 @@ header {
     font-weight: 300;
     color: var(--color-gray);
 }
-/* .position {
-    position: relative;
-}
-.box-position img {
-    position: absolute;
-    toprem;
-    left: 0;
-    z-index: -9999;
-    border: 10px solid red;
-} */
 
 .second button {
     font-size: 1.8rem;
@@ -230,3 +241,362 @@ header {
     width: 100%;
     height: 100%;
 }
+/* Section Three */
+
+.third {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 11%;
+}
+.image-div {
+    flex-basis: 51%;
+}
+.third-div {
+    flex-basis: 38%;
+   
+}
+.image-div img {
+    max-width: 100%;
+}
+
+.third h2{
+     font-size:3.6rem;
+     line-height: 5.6rem;
+     font-weight: 700;
+     color: var(--color-black);
+
+}
+.third h2::after{
+    content: "";
+    display: block;
+    width: 5.6rem;
+    height: .2rem;
+    background-color: var(--color-black);
+    border-radius: 1rem;
+    margin-top: 2.6rem
+    
+
+}
+.third p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: var(--color-gray);
+    margin-top: 3.1rem
+}
+.third button {
+    border: .14rem solid var(--color-blue);
+    padding: 1rem  5.1rem;
+    border-radius: 5.5rem;
+    color: var(--color-blue);
+    background-color: transparent;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 3.5rem ;
+    margin-top: 3.7rem;
+}
+
+/* Section Four   */
+
+.fourth {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24%;
+}
+
+.fourth-div {
+    flex-basis: 36.3%;
+}
+
+.image-div-2 {
+    flex-basis: 57.5%;
+}
+
+.fourth-div i {
+    margin-left: 1.4rem;
+}
+
+/* Container Three and Section Five  */
+
+.third-container {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 112rem;
+}
+
+.fifth {
+     background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+     border-radius: 24px;
+     position: relative;
+     margin-top: 16.9%;
+     margin-bottom: 18%;
+}
+
+
+.keeping-h3 h3 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    color: var(--color-white);
+    text-align: center;
+    position: relative;
+    padding: 6.4rem;
+
+}
+.keeping-h3 h3::after {
+    content: "";
+    display: block;
+    width: 5.6rem;
+    position: relative;
+    top: 0;
+    left: 42%;
+    height: .2rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    margin-top: 2.5rem ;
+
+    
+}
+.image-and-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 78% ;
+    max-width: 87.6rem ;
+    margin: 0 auto;
+    padding-bottom: 7.9rem;
+   
+}
+
+.image-with-text {
+    flex-basis: 46.2%;
+    display: flex;
+    align-items: center;
+}
+
+.text  {
+    flex-basis: 41.6%
+}
+.two-texts {
+    margin-left: 2.9rem;
+}
+
+.two-texts h4 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    color: var(--color-white);
+    
+}
+
+.two-texts span {
+    font-size: 1.8rem;
+    line-height: 4.8rem;
+    font-weight: 400;
+    color: var(--color-white);
+
+}
+
+.text p {
+    font-size: 1.9rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: var(--color-white);
+           
+}
+
+.img-positon {
+    position: absolute;
+    right: -4.8rem;
+    top: -1.5rem;
+}
+
+/* Section Six  */
+section.sixth {
+    text-align: center;
+}
+.latest-article h2 {
+    font-size: 3.6rem;
+    line-height: 5.6rem;
+    color: var(--color-black);
+    font-weight: 700;
+    position: relative;
+}
+
+.latest-article h2::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 5.6rem;
+    height: .2rem;
+    background-color: var(--color-black);
+    border-radius: 1rem;
+    margin-top: 2.6rem ;
+
+}
+.three-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7.2rem;
+    justify-content: space-between;
+}
+
+.similarbox {
+    flex-basis: 29.24% ;
+    text-align: left;
+    box-shadow: 1rem 4rem 5rem rgba(229, 233, 246, 0.4);
+    border-radius: 2rem;
+    background-color: var(--color-white);
+    position: relative;
+}
+.similarbox > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease-in-out ;
+}
+.similarbox > a:hover {
+    background-color: rgb(160, 40, 40);
+    opacity: 0.55;
+    border-radius: 2rem;
+}
+.image-1 img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.lab {
+    padding: 2.1rem 6.6rem 3.5rem 3.3rem;
+}
+.lab h3 {
+    font-size: 2.1rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 1.2rem
+}
+
+.lab p {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-weight: 300;
+  color: var(--color-gray);  
+  margin-bottom: 2.5rem
+}
+
+.lab a {
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    color: var(--color-blue-readmore);
+    text-decoration: none;
+}
+
+.lab a i {
+    margin-left: .9rem;
+    vertical-align: middle;
+}
+
+
+section.sixth button {
+  
+    color: var(--color-blue);
+    border-radius: 5.5rem;
+    font-size: 1.8rem;
+    line-height: 6rem;
+    padding: .1rem 6.6rem;
+    margin-top: 3rem;
+    background-color: transparent;
+    border: .14rem solid var(--color-blue);
+    
+}
+
+/* Footer  */
+
+footer {
+    margin-top: 11%;
+    height: 44.5rem;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    position: relative;
+}
+
+.points {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.main-div {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    height: 100%;
+    align-items: center;
+    margin: 0 auto
+}
+
+.logo-position  {
+        display: flex;
+        align-items: center;
+
+}
+.logo-position h5 {
+    font-size: 2.4rem;
+    line-height: 3.012rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-left: 1.2rem;
+}
+
+.trafalgar-footer p {
+    margin-top: 1.9rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    color: var(--color-white);
+    margin-bottom: 3.4rem;
+}
+
+.trafalgar-footer span {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+    color: var(--color-white);
+
+}
+.similar h3 {
+    font-size: 2rem;
+    line-height: 6rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: .7rem;
+
+}
+
+.similar ul li {
+    margin-bottom: 1.3rem;
+}
+
+.similar ul li a {
+    font-size: 1.8rem;
+    line-height: 3.8rem;
+    font-weight: 300;
+    color: var(--color-white);
+    text-decoration: none;
+
+}
+
+
+
+.trafalgar-footer {
+    flex-basis: 32.58%;
+}
+
+.company,.region, .help {
+    flex-basis: 14.14%
+}
+
